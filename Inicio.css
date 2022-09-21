@@ -1,0 +1,172 @@
+#{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: rgba(55, 105, 182, 0.836);*/
+    background: #303030;
+    font-family: Arial, Helvetica, sans-serif;
+}
+container{
+    height:100vh ;
+    padding: 1rem;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    width: 500px;
+
+}
+
+.connect-friends {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #e91e63;
+}
+
+.form *{
+    display: block;
+   
+}
+
+.form{
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color:#171717;
+    
+    border-radius: 7px;
+    box-shadow: #e91e63;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="submit"]{
+    padding: 1rem;
+    width: 90%;
+    margin-bottom: 10px;
+    outline-color: #e91e63;
+    border: solid thin #ddeded;
+    
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    text-align: left;
+
+}
+
+.form input  ::placeholder{
+    color: #e91e63;/*#a6a8a8;*/
+}
+
+.form input[type="submit"]{
+    background-color: #0e68cf;
+    text-align: center;
+    padding: 1rem ;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.form span{
+    text-align:center;
+    font-size: 14px;
+    margin-top:15px;
+}
+
+.form span a {
+    color: #e0dae1;
+    text-decoration: none;
+}
+
+.border{
+    width: 80%;
+    height: 1px;
+    background-color: #e0dae1;
+    margin: 20px auto;
+}
+
+.form button{
+    width: 50%;
+    margin: auto;
+    background-color: #e91e63;
+    padding: .9rem .3rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.create-page{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 15px;
+}
+
+.create-page > a {
+    color:#e91e63; /* #222;*/
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px){
+    .logo img {
+        width: 300px;
+    }
+    .connect-friends{
+        font-size: 1.5rem;
+    }
+    .form input ::placeholder{
+        font-size: 1rem;
+    }
+    .form input[type="submit"]{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .container-profile{
+        width: 40%;
+        margin-left: 100px;
+        transform: translateY(-50px);
+    }
+    .logo img{
+        display: inline-block;
+        margin: 0;
+    }
+    .connect-friends{
+        text-align: left;
+        margin-left: 30px;
+        font-size: 27px;
+    }
+    .container-form{
+        width: 50%;
+    }
+    .form{
+        width: 400px;
+    }
+}
+
+
+
+    

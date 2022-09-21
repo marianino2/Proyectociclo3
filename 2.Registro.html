@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="SESION06.js"></script>
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="registro.css" />
+  </head>
+  <body>
+    <h1>Registro Lampropeltis</h1>
+
+    <form
+      action=""
+      method="get"
+      name="formRegistro"
+      id="formulario"
+      onSubmit="validar_formulario();"
+    >
+      <p>Nombre: <input type="text" id="nombre" name="nombre" /></p>
+
+      <p>
+        Usuario:
+        <input type="text" id="username" name="username" />
+      </p>
+
+      <p>
+        Sexo: <input type="radio" id="sexo" name="sexo" value="h" /> hombre
+        <input type="radio" name="sexo" id="sexo" value="m" /> mujer
+      </p>
+
+      <p>
+        Correo: <input type="text" id="correo" name="correo" maxlength="100" />
+      </p>
+
+      <p>
+        Contraseña:
+        <input type="password" id="password" name="password" />
+      </p>
+
+      <p>
+        <input type="checkbox" name="condiciones" /> Declaro haber leido y
+        acepto las condiciones generales del programa y la normativa sobre
+        protección de datos
+      </p>
+
+      <button type="submit" value="Enviar">Enviar</button>
+    </form>
+  </body>
+</html>
